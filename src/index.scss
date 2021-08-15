@@ -1,0 +1,170 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #E7F6FF;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  font-family: 'Inter';
+}
+
+
+.wrapper {
+  max-width: 1080px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+}
+
+.header {
+  padding: 45px 45px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.headerLeft {
+    img {
+      margin-right: 16px;
+    }
+}
+
+.headerRight {
+  li {
+    cursor: pointer;
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 40px;
+
+  &__wrapper {
+    grid-column: 2 span;
+    display: flex;
+  }
+}
+
+
+.search__block {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8e5e5;
+  border-radius: 10px;
+  padding: 18px 18px;
+  position: relative;
+}
+
+.clearr {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.search__btn {
+  border: none;
+  background-color: transparent;
+}
+
+.search__input {
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+
+  
+.cart {
+  flex: 1 0 0;
+  overflow: auto;
+  margin-bottom: 50px;
+
+  &__info {
+    margin-bottom: 20px;
+    position: relative;
+
+    span {
+      position: relative;
+      top: -4px;
+      display: block;
+      margin: 0 7px;
+      flex: 1 0 0;
+      border-bottom: 1px dashed #C4C4C4;
+    }
+  }
+}
+
+
+.cart__btn {
+  background: #9DD558;
+  border-radius: 18px;
+  padding: 18px 0;
+  width: 100%;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color .3s ease;
+
+  &:hover {
+    background-color: #83b348;
+  }
+}
+
+.drawerClear {
+  margin-top: 250px;
+
+  p {
+    max-width: 300px;
+  }
+}
+
+
+.cartItem {
+  border-radius: 20px;
+  border: 1px solid rgba($color: #000000, $alpha: 0.5);
+  overflow: hidden;
+  padding: 10px;
+
+  p {
+    font-size: 16px;
+  }
+
+  b {
+    font-size: 14px;
+  }
+}
+
+.removeBtn {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+

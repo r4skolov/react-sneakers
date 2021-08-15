@@ -1,0 +1,42 @@
+.card {
+  border: 1px solid #d3d2d2;
+  padding: 20px;
+  width: 210px;
+  border-radius: 40px;
+  transition: box-shadow .3s ease , transform .3s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  h5 {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  button {
+    background: #FFFFFF;
+    border: 1px solid #d1cbcb;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  .plus {
+    cursor: pointer;
+  }
+
+  .fav {
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
+
+}
+
