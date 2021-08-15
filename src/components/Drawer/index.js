@@ -40,7 +40,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
         <div className={`${styles.overlay} ${opened ? styles.overlay__visible : ' ' }`}>
         <div className={styles.drawer}>
             <h2 className="d-flex justify-between">Корзина
-            <img onClick={onClose} className="removeBtn cu-p" src="/img/btn-remove.svg" alt="" />
+            <img onClick={onClose} className="removeBtn cu-p" src="img/btn-remove.svg" alt="" />
             </h2>
 
             {/* если есть хоть что то в корзине тогда показываем товары и стоимость если ничего нет ":" тогда показываем блок корзина пуста */}
@@ -57,7 +57,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
                           <b>{obj.price} руб</b>
                         </div>
                         {/*удаление из корзины  передаем анонимную функцию иначе если передать пропс он передаст событие event но не айди товара */}
-                        <img onClick={() => onRemove(obj.id)} className="removeBtn" src="/img/btn-remove.svg" alt="Delete" />
+                        <img onClick={() => onRemove(obj.id)} className="removeBtn" src="img/btn-remove.svg" alt="Delete" />
                     </div>
                 ))}
                 </div> 
@@ -82,7 +82,7 @@ function Drawer({ onClose, onRemove, items = [], opened }) {
             <Info 
             title={isOrderComplete ? "Заказ оформлен!" : "Корзина пуста"} 
             description={isOrderComplete ? `Ваш заказ #${orderId} скоро будет передан курьерской доставке` : "Добавьте хотя бы одну пару кроссовок, что бы сделать заказ" } 
-            img={isOrderComplete ? "/img/cart-ok.png" : "/img/cart-clear.png"} />
+            img={isOrderComplete ? "img/cart-ok.png" : "img/cart-clear.png"} />
            )}
           </div>
           </div>

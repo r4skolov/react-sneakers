@@ -9,7 +9,7 @@ function Header(props) {
         <header className="header d-flex justify-between">
         <Link to="/">
             <div className="headerLeft d-flex align-center">
-                  <img src="/img/logo.png" alt="logo" width={40} height={40}/>
+                  <img src="img/logo.png" alt="logo" width={40} height={40}/>
                   <div className="headerInfo">
                     <h3 className="text-uppercase">React Sneakers</h3>
                     <p>Магазин лучших кроссовок</p>
@@ -27,12 +27,12 @@ function Header(props) {
           </li>
           <li className="mr-30 d-flex">
             <Link to="/favorites">
-              <img width={20} height={20} src="/img/favoritebtn.svg" alt="Избранные" />
+              <img width={20} height={20} src="img/favoritebtn.svg" alt="Избранные" />
             </Link>
           </li>
           <li className="d-flex">
             <Link to="/orders">
-               <img width={20} height={20} src="/img/union.svg" alt="Заказы" />
+               <img width={20} height={20} src="img/union.svg" alt="Заказы" />
             </Link> 
           </li>
         </ul>

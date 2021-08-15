@@ -18,10 +18,10 @@ function Home({
            <h1>{searchValue ? `Поиск по запросу: "${searchValue}"` : 'Все кроссовки'}</h1>
            <div className="search__block">
                 <button className="search__btn">
-                  <img src="/img/search.svg" alt="Search" />
+                  <img src="img/search.svg" alt="Search" />
                 </button>
                 {/* если есть пеменная серчвелью только тогда отображать кнопку */}
-                {searchValue && <img onClick={() => setSearchValue ('')} className="clearr cu-p" src="/img/btn-remove.svg" alt="Clear" />}
+                {searchValue && <img onClick={() => setSearchValue ('')} className="clearr cu-p" src="img/btn-remove.svg" alt="Clear" />}
                 <input onChange={onChangeSearchInput} value={searchValue} className="search__input" type="text" placeholder="Поиск..."/>
            </div>
         </div>

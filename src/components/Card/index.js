@@ -40,7 +40,7 @@ function Card({ id, onFavorite, title, imageUrl, price, onPlus, favorited = fals
       ) : (
             // сами товары
             <article className={styles.card}>
-                {onFavorite && <img className={styles.fav} onClick={onClickFavorite} src={isFavorite ? '/img/liked.svg' : '/img/unliked.svg'}/>
+                {onFavorite && <img className={styles.fav} onClick={onClickFavorite} src={isFavorite ? 'img/liked.svg' : 'img/unliked.svg'}/>
                 }
                 <img className="mb-15" src={imageUrl} alt="" width='100%' height='135px'/>
                 <h5 className="mb-15">{title}</h5>
@@ -52,7 +52,7 @@ function Card({ id, onFavorite, title, imageUrl, price, onPlus, favorited = fals
                    {onPlus &&  <img 
                       className={styles.plus} 
                       onClick={onClickPlus} 
-                      src={isItemAdded(id) ? '/img/ok.svg' : '/img/plus.svg'}
+                      src={isItemAdded(id) ? 'img/ok.svg' : 'img/plus.svg'}
                     />
                    }
                 </div>
