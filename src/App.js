@@ -127,7 +127,7 @@ function App() {
       <Header onClickCart={() => setCartOpened(true)}/>
 
       {/* свойство exact делает переход строгим и будет отборажать внутри тега только страницу хоум */}
-      <Route path="/" exact>  
+      <Route path="https://r4skolov.github.io/react-sneakers/" exact>  
         <Home 
           items={items}
           searchValue={searchValue}
@@ -138,13 +138,13 @@ function App() {
           cartItems={cartItems}
         />
       </Route>
-      <Route path="/favorites" exact>  
+      <Route path="https://r4skolov.github.io/react-sneakers/favorites" exact>  
         <Favorites 
           onAddToCart={onAddToCart}
           onAddToFavorite={onAddToFavorite}
         />
       </Route>
-      <Route path="/orders" exact>
+      <Route path="https://r4skolov.github.io/react-sneakers/orders" exact>
           <Orders />
       </Route>
     </div>
