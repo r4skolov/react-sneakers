@@ -1,8 +1,28 @@
 Stack:
 
-ReactJS + хуки
-React Router
-Axios
-SCSS
-React Context
-React Skeleton
+<ul> 
+  <li> 
+    ReactJS + хуки
+  </li>
+    <li> 
+   React Router
+  </li>
+    <li> 
+    Axios
+  </li>
+    <li> 
+    SCSS
+  </li>
+   <li> 
+    React Context
+  </li>
+   <li> 
+    React Skeleton
+  </li>
+</ul>
+
+ <br>
+
+
+
+
